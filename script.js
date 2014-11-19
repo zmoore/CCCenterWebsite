@@ -27,6 +27,17 @@ window.addEventListener('load',function(){
 };
 	var form = document.getElementById('form');
 	
+	form.addEventListener('submit', function(){
+		var previewFrame = document.getElementById('preview');
+		previewFrame.className = "fullscreen";
+		
+		function unPreview(){
+			previewFrame.className = "preview";
+			previewFrame.contentDocument.removeEventListener('click',unPreview);
+		}
+		previewFrame.contentDocument.addEventListener('click',unPreview);
+	});
+	
 	var numDropdowns = 0;
 	
 	function addDropDown(opts){

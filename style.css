@@ -19,10 +19,6 @@ form {
 	background-color: grey;
 }
 
-[name="preview"]{
-	display: none;
-}
-
 [name="background"] {
 	color:transparent;
 	width: 50px;
@@ -73,4 +69,20 @@ option {
 
 .font3 {
 	font-family: "Impact";
+}
+
+.fullscreen{
+	border: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	width: 100vw;
+	background-color: #f0f;
+}
+
+.preview{
+	border: none;
+	width: 100%;
+	background-color: #f00;
 }
