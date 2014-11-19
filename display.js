@@ -32,7 +32,7 @@ addEventListener('load',function(){
 				document.body.className = "gradient " + options.background[key];
 			}else with (document.body.appendChild(document.createElement('div'))){ //create a new line of text
 				innerHTML = options[options.head[+key].next][+value].value; //Add text to the line we created
-				className = "text";
+				className = "text"
 			}
 			return "";
 		});
