@@ -7,6 +7,7 @@ window.addEventListener('load',function(){
 	head: [
 		{next:'compsci', value:"Computer Science"},
 		{next:'eleceng', value:"Electrical Engineering"},
+		{next:'libarts', value:"Liberal Arts"},
 		{next:'biology', value:"Biology"},
 	],
 	compsci: [
@@ -17,6 +18,13 @@ window.addEventListener('load',function(){
 		{next: undefined, value:"Electrical Engineering"},
 		{next: undefined, value:"Mathematics"},
 		{next: undefined, value:"Physics"},
+	],
+	libarts: [
+		{next: undefined, value:"Literature"},
+		{next: undefined, value:"Philosophy"},
+		{next: undefined, value:"Social Science"},
+		{next: undefined, value:"History"},
+		{next: undefined, value:"PolySci"},
 	],
 	biology: [
 		{next: undefined, value:"Bology"},
