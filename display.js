@@ -38,7 +38,7 @@ addEventListener('load',function(){
 	location.href.split('?',2)[1]  //The characters after the "?" in the url
 		.replace(/([^=&]+)=([^=&]+)(?:&|$)/g,function(_match,key,value,_stringIndex){ //Loop over "(key1)=(value1)&(key2)=(value2)&..." in string
 			if (+key == 0) {
-				document.body.className = "gradient " + options.background[key];
+				document.body.className = "iframe-body " + options.background[key];
 				school = +value
 			}else with (document.body.appendChild(document.createElement('div'))){ //create a new line of text
 				innerHTML = options[options.head[school].next][+value].value; //Add text to the line we created
