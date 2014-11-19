@@ -2,7 +2,7 @@
 	head: [
 		{id:"bf923bc309c95a5f876a2d159756c7298c6b5d72fa2a8f0857107d1ef5b3a33f", value:"I'm interested in", next:'interest'}
 	],
-	interset: [
+	interest: [
 		{id:"589e9231c226460195682eec0796e5771b132d4e335f4a89fc06a72642b11669", value:"Programming", next:'none'}
 	],
 	background: [
