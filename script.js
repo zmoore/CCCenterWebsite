@@ -93,3 +93,26 @@ window.addEventListener('load',function(){
 	}
 	addDropDown(options.head);
 });
+
+var uploadShown = false;
+window.onload = function(){
+var uploadHolder = document.getElementById('uploadHolder');
+document.getElementById('uploadImage').onclick = function(){
+	if(uploadShown){
+		uploadHolder.removeChild(document.getElementById('uploadIframe'));
+		uploadShown = false;
+		return;
+	}
+	var canvas = document.createElement('iframe');
+	canvas.style.position = 'fixed';
+	canvas.style.top = '40px';
+	canvas.style.right = '20px';
+	canvas.style.background = '#DDD';
+	canvas.setAttribute('width','40%');
+	canvas.setAttribute('height','30%');
+	canvas.setAttribute('id','uploadIframe');
+	canvas.setAttribute('src','savedImages/upload.html');
+	uploadHolder.appendChild(canvas);
+	uploadShown = true;
+};
+};
