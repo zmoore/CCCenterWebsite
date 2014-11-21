@@ -40,7 +40,7 @@ addEventListener('load',function(){
 			if (+key == 0) {
 				document.body.className = "iframe-body " + options.background[key];
 				school = +value
-			}else with (document.body.appendChild(document.createElement('div'))){ //create a new line of text
+			}else with (document.getElementsByClassName("display")[0].appendChild(document.createElement('div'))){ //create a new line of text
 				innerHTML = options[options.head[school].next][+value].value; //Add text to the line we created
 				className = "title2"
 			}
