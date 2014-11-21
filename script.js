@@ -27,11 +27,10 @@ window.addEventListener('load',function(){
 		{next: undefined, value:"PolySci"},
 	],
 	biology: [
-		{next: undefined, value:"Bology"},
+		{next: undefined, value:"Biology"},
 		{next: undefined, value:"Botany"},
 		{next: undefined, value:"Zoology"},
 	],
-	background: [ "" ],
 };
 	var form = document.getElementById('form');
 	

@@ -28,17 +28,16 @@ addEventListener('load',function(){
 		{next: undefined, value:"PolySci"},
 	],
 	biology: [
-		{next: undefined, value:"Bology"},
+		{next: undefined, value:"Biology"},
 		{next: undefined, value:"Botany"},
 		{next: undefined, value:"Zoology"},
 	],
-	background: [ "" ],
 };
 	var school = undefined;
 	location.href.split('?',2)[1]  //The characters after the "?" in the url
 		.replace(/([^=&]+)=([^=&]+)(?:&|$)/g,function(_match,key,value,_stringIndex){ //Loop over "(key1)=(value1)&(key2)=(value2)&..." in string
 			if (+key == 0) {
-				document.body.className = "iframe-body " + options.background[key];
+				document.body.className = "iframe-body " + options.head[key].next;
 				school = +value
 			}else with (document.getElementsByClassName("display")[0].appendChild(document.createElement('div'))){ //create a new line of text
 				innerHTML = options[options.head[school].next][+value].value; //Add text to the line we created
