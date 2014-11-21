@@ -82,6 +82,7 @@ option {
 
 .preview{
 	border: none;
+	height: 500px;
 	width: 100%;
 }
 
@@ -113,7 +114,7 @@ option {
 	width: 900px;
 	height: 100vh;
 	margin: 0 auto;
-	text-align: center;	
+	text-align: center;
 }
 
 
